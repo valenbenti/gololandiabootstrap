@@ -1,0 +1,344 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr 1fr auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "header"
+    "bgr"
+    "info"
+    "layout"
+    "footer";
+}
+.productos{
+    background-color: rgb(8, 230, 238);
+    margin: 35px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+}
+h1{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+}
+.textimg{
+    background: lightcoral;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    grid-area: info;
+}
+.golosinas {
+    width: 1000px;
+}
+.golosinas p {
+    max-width: 500px;
+}
+.textimg img {
+    width: 300px;
+    height: 300px;
+}
+.textimg article{
+    display: flex;
+}
+.slogan{
+    background-color: blueviolet;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+}
+.slogan2{
+    margin: auto;
+    display: table;
+}
+h2{
+    float: left;
+    color: rgb(12, 9, 9);
+    position: relative;
+}
+h2 span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color: blueviolet;
+    border-left: 1px solid white;
+    animation: maquina 5s infinite alternate steps(30);
+}
+@keyframes maquina{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+.cuadro-fotos{
+    width: 500px;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: auto auto;
+    margin: auto;
+}
+.foto img  {
+    width: 600px;
+}
+.cuadro{
+    grid-area: layout;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+.cuadro-fotos img{
+    width: 100px;
+}
+.foto{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+footer {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    grid-area: footer;
+}
+
+.logofooter {
+    width: 80px;
+}
+footer article {
+
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    header ul a {
+    font-size: 16px;
+}
+.golosinas {
+    display: flex;
+    flex-direction: column;
+}
+}
+
+.presentacion {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0;
+}
+.presentacion p, .presentacion h2 {
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.presentacion__article{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 60%;
+}
+.presentacion__div {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.presentacion__div div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 3px solid black;
+    padding: 20px;
+    gap: 10px;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    header ul a {
+    font-size: 16px;
+}
+.presentacion {
+    display: flex;
+    flex-direction: row;
+}
+}
+footer {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    grid-area: footer;
+} 
+.logofooter {
+    width: 80px;
+
+}
+
+footer article {
+
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+    header ul a {
+    font-size: 16px;
+}
+.golosinas {
+    display: flex;
+    flex-direction: column;
+}
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+.padre{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    padding: 30px;
+    margin: 50px 0;
+    border-radius: 10px;
+}
+
+
+label {
+    color: white;
+}
+
+textarea{
+    padding-left: 9px;
+    width: 500px;
+    resize: none;
+}
+footer {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    grid-area: footer;
+}
+
+.logofooter {
+    width: 80px;
+
+}
+
+footer article {
+
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    header ul a {
+    font-size: 16px;
+}
+.golosinas {
+    display: flex;
+    flex-direction: column;
+}
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 15px 0
+}
+
+.Tuppers {
+    border: 2px solid black;
+    padding: 10px;
+}
+.container img {
+    width: 300px;
+}
+.row1, .row2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    grid-area: footer;
+}
+.logofooter {
+    width: 80px;
+}
+footer article {
+    display: flex;
+    justify-content: center;
+}
+.influencer{
+    display: flex;
+    justify-content: center;
+    margin: 70px 0;
+}
+.influencer p, .influencer h2 {
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.influencer__article{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 60%;
+    }
+.influencer__div{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.influencer__div div{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border: 3px solid black;
+    padding: 20px;
+    gap: 10px;
+    align-items: center;
+}
+footer {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    grid-area: footer;
+}
+.logofooter {
+    width: 80px;
+}
+footer article {
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+    header ul a {
+    font-size: 16px;
+}
+.golosinas {
+    display: flex;
+    flex-direction: column;
+}
+}
+
